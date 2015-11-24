@@ -638,6 +638,7 @@
         ```
     * Right click on the file,  Open with “Java™ Web Start Launcher”
     * After the UI launches, from a Python Shell run the convert_to_ucs_python command
+
 ---
 # convert_to_ucs_python #
 * On some operating systems, the program might encounter issues discovering the path to which UI logs are written.
@@ -649,6 +650,7 @@
         ./Library/Application Support/Oracle/Java/Deployment/log/.ucsm
     ```
 * so now you can specify log_path argument to convert_to_ucs_python to "./Library/Application Support/Oracle/Java/Deployment/log/.ucsm"
+
 ---
 # Thank you #
 ---
