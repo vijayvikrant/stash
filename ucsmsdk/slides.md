@@ -630,7 +630,7 @@
 ---
 # convert_to_ucs_python #
 * GUI considers a few XML snippets as secure and does not log them. So, the convert_to_ucs_python does not find the logs to do the translation. The workaround is as follows:
-    * Save the launch link as a file … i.e.https://<ip_or_hostname>/ucsm/ucsm.jnlp
+    * Save the launch link as a file … i.e. ``` https://<ip_or_hostname>/ucsm/ucsm.jnlp ```
     * Right click on the file, Open with notepad/vim, and add the following line after the other property definitions.
 
         ```xml 
