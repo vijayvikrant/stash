@@ -9,9 +9,6 @@ if len(sys.argv) < 3:
     sys.exit(0)
 
 
-ns = "{http://www.w3.org/2001/XMLSchema}"
-
-
 def form_xpath(elem_type, name, value):
     ns = "{http://www.w3.org/2001/XMLSchema}"
     xpath = './/' + ns + elem_type + '[@' + name + '="' + value + '"]'
@@ -29,8 +26,7 @@ def make_rn_dict(filename):
             continue
         for _ in list(node[0][0]):
             if _.tag == 'rn':
-                rn = _.attrib['value']
-                rn_dict[key] = rn
+                rn_dict[key] = _.attrib['value']
                 break
     return rn_dict
 
