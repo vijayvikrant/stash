@@ -23,3 +23,17 @@ Outputs,
 [49, 441, 1225, 2401, 3969, 5929, 8281]
 [49, 441, 1225, 2401, 3969, 5929, 8281]
 ```
+
+Other uses of a list comprehension with filters,
+```python
+def get_all_positions_of_char_in_word(word, c):
+    return [x for x in range(len(word)) if word[x] == c]
+
+print get_all_positions_of_char_in_word('cisco', 'c')
+print get_all_positions_of_char_in_word('vijay vikrant balyan', 'v')
+```
+Outputs,
+```python
+[0, 3]
+[0, 6]
+```
