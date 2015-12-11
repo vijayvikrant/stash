@@ -7,12 +7,16 @@ ftp = ftplib.FTP("ftp.kernel.org")
 ftp.login("anonymous", "ftplib-example-1")
 
 ftp.cwd("/pub/software/java/jato")
+
+# retrieve lines
 ftp.retrlines('LIST')
 
 # to download a file named readme
 # takes remote filename string as argument 1
 # takes a function as argument 2
 # the second argument is executed when arg1 is downloaded
+
+# retrieve binary
 ftp.retrbinary('RETR jato-0.3.tar.xz', open('jato-0.3.tar.xz', 'wb').write)
 
 ftp.quit()
