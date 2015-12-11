@@ -11,23 +11,23 @@ def double_out(old_fn):
         return 2*old_fn(*args, **kwds)
     return new_fn
 
-def sqaure(n):
+def square(n):
     return n*n
 
-print sqaure(2)
+print square(2)
 
 @double_in
-def sqaure(n):
+def square(n):
     return n*n
 
-print sqaure(2)
+print square(2)
 
 @double_out
 @double_in
-def sqaure(n):
+def square(n):
     return n*n
 
-print sqaure(2)
+print square(2)
 ```
 Outputs,
 ```python
