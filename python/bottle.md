@@ -16,7 +16,7 @@ def wish(name):
 
 
 @route('/books')
-def books_get():
+def booksget():
     import sqlite3
     conn = sqlite3.connect("mydatabase.db")
     cursor = conn.cursor()
