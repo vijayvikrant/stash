@@ -13,5 +13,5 @@ print words
 ```
 Outputs,
 ```python
-{'word4': 'meaning4', 'word1': 'meaning1', 'word3': 'meaning3', 'word2': 'meaning2'}
+{'cfg1': 'value1', 'cfg2': 'value2', 'cfg3': 'value3', 'cfg4': 'value4'}
 ```
