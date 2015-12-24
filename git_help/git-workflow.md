@@ -1,4 +1,4 @@
-# usual workflow:
+#### Usual workflow:
 
 * Fork a repo using github
 
@@ -27,8 +27,12 @@
 * Now go to github and raise a pull request for this branch
 
 
+#### Retrigger ci using a dummy push
 
-# misc commands:
+    git commit -s --amend -m "commit msg"
+    git push remote branch -f
+
+#### Misc commands:
 
         git remote -v
         git diff
