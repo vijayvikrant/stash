@@ -26,6 +26,25 @@
 
 * Now go to github and raise a pull request for this branch
 
+#### Diff commands
+* Basic diff
+
+    `git diff`
+* Diff current working directory and the most recent commit
+
+    `git diff HEAD`
+* Using a external diff tool
+
+    `git difftool`
+* Diff between the index and most recent commit
+
+    `git diff --cached`
+* Diff between the last commit and the most recent commit
+
+    `git diff HEAD HEAD^`
+* Diff between the last commit and 3 commits prior to it.
+
+    `git diff HEAD HEAD^^^`
 
 #### Retrigger ci using a dummy push
 
@@ -35,5 +54,4 @@
 #### Misc commands:
 
         git remote -v
-        git diff
 
