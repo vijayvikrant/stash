@@ -72,6 +72,18 @@
         // drop the stash 
         git statsh drop stash@{0}
 
+#### Git rebase
+* Make all the changes that are done on a feature branch on another branch.
+
+        // checkout the branch and make your changes
+        git checkout feature_branch
+
+        // this will port all your changes over the master branch
+        git rebase master
+
+        // post this you will have all your changes over the master branch
+        // all your sha would change
+
 #### Misc commands:
 
         git remote -v
