@@ -51,6 +51,27 @@
     git commit -s --amend -m "commit msg"
     git push remote branch -f
 
+
+#### Git stash
+* Stashes the changes so that we can work on something else and restore the
+    changes back at a later time.
+
+        git stash save "saving changes for later"
+
+        // list the stash
+        git stash list
+
+        // applying the changes that were stashed
+
+        // this will apply the changes but will not remove changes in stash
+        git stash apply stash@{0}
+
+        // takes the first change from the stashes, applies it and removes it from the stash 
+        git stash pop
+
+        // drop the stash 
+        git statsh drop stash@{0}
+
 #### Misc commands:
 
         git remote -v
