@@ -26,6 +26,15 @@
 
 * Now go to github and raise a pull request for this branch
 
+
+#### Deleting a git branch
+* Local delete
+
+    `git branch -D branchname`
+* Remote delete
+
+    `git push origin :branchname`
+
 #### Diff commands
 * Basic diff
 
