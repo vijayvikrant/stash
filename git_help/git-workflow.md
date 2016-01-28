@@ -97,3 +97,16 @@
 
         git remote -v
 
+#### How to resolve merge conflicts
+
+    git fetch upstream
+    git branch -f master upstream/master
+
+    git checkout <working_branch>
+    git rebase master
+
+    # resolve any conflicts that show up
+    # do "git add" after resolving the conflict
+    
+    git push -f origin working_branch
+
