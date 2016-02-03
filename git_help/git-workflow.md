@@ -14,6 +14,10 @@
 
         git checkout -b my_new_branch
 
+* Creating a branch based of a earlier commit
+
+        git branch branchname sha_commit
+
 * Make the changes to this branch
 
         git add .
