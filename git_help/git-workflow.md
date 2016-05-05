@@ -114,3 +114,12 @@
     
     git push -f origin working_branch
 
+
+
+#### squash last X commits together into 1 commit
+
+    git rebase -i HEAD~X
+    
+    # change the commits you want squashed to "squash" from "pick"
+    git push -f origin <branch>
+
