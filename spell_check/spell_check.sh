@@ -16,9 +16,11 @@
 # done;
 # ./spell_check.sh out3
 
+rm out out1 out2
 cut -d "=" -f 2 $1 | sed 's/\\n/ /g' | sed 's/<[^>]*>/ /g'| sed 's///g' > out 
-cat out | aspell -a | grep '^&' > out1 
+cat out | aspell -a --personal="`pwd`/.aspell.en.pws"| grep '^&' > out1 
 cat out1 | cut -d " " -f 2 | sort | uniq > out2
+cat out2
 
 
 
