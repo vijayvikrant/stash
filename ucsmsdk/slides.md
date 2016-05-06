@@ -1,6 +1,9 @@
 # Cisco Ucs Python SDK #
 ---
+# Installation
+    pip install ucmsdk
 
+---
 # Agenda #
 * Introducing the changes
     * Structural changes
