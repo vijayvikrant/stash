@@ -30,6 +30,9 @@
 
 * Now go to github and raise a pull request for this branch
 
+#### Create branch out of an existing branch
+
+    git checkout -b new_branch old_branch
 
 #### Deleting a git branch
 * Local delete
